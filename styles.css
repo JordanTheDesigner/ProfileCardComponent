@@ -1,0 +1,121 @@
+body{
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  color:hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 400;
+  background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+  background-position: -120px -200px, 800px 400px;
+  background-size: 50%, 50%;
+  background-repeat: no-repeat;
+}
+
+h1, h2{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h1 span{
+  color:hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+hr{
+  border-bottom:0px;
+  border:.5px solid hsl(0, 0%, 87%);
+}
+
+/*Card Container*/
+#CardContainer{
+  display: flex;
+  flex-direction: column;
+  /*align-items:center;
+  justify-content: center;*/
+  width:350px;
+  height:375px;
+  background:#fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+/*Container Top Half*/
+
+#BackgroundSection{
+  background-image: url('images/bg-pattern-card.svg');
+  height: 140px;
+  width: 100%;
+}
+
+#ProfilePicture{
+    margin-top:-50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ProfilePicture img{
+  border-radius: 60px;
+  border:5px solid #fff;
+}
+
+/*Name Section*/
+
+#NameLocation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:30px;
+}
+
+#NameLocation h1{
+  margin-bottom:10px;
+}
+
+
+#Location{
+  color:hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+/*Stats Section*/
+#ProfileStats{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding:0 45px;
+  margin-bottom: 30px;
+}
+
+#ProfileStats h2{
+  margin-bottom: 5px;
+  color:hsl(229, 23%, 23%);
+  letter-spacing: normal;
+}
+
+#ProfileFollowers,
+#ProfileLikes,
+#ProfilePhotos{
+font-size:10px;
+color:hsl(0, 0%, 59%);
+letter-spacing: 3px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+
+  body{
+    background-position: -88px -120px, 228px 420px;
+    background-size: 82%, 82%;
+  }
+
+}
